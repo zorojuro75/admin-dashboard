@@ -5,9 +5,8 @@ import Sidebar from "./components/Sidebar";
 const App: React.FC = () => {
   return (
     <>
-      <Sidebar />
       <Header />
-      
+      <Sidebar />
     </>
   );
 };

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { List } from "@mui/material";
-
+import { Box, List } from "@mui/material";
 import SidebarItem from "./SidebarItem";
+import MainContent from "./MainContent";
 interface SidebarProps {}
 const Sidebar: React.FC<SidebarProps> = () => {
   let sidebarItems: SidebarItem[] = [
@@ -51,37 +51,41 @@ const Sidebar: React.FC<SidebarProps> = () => {
           icon: "exit_to_app",
         },
         {
-            name: "Reports",
-            icon: "exit_to_app",
+          name: "Reports",
+          icon: "exit_to_app",
         },
         {
-            name: "Announcements",
-            icon: "exit_to_app",
+          name: "Announcements",
+          icon: "exit_to_app",
         },
         {
-            name: "Annual Check Status",
-            icon: "exit_to_app",
-        }
+          name: "Annual Check Status",
+          icon: "exit_to_app",
+        },
       ],
     },
   ];
   return (
-    <List
-      style={{
-        width: "272px",
-        padding: "72px 18px",
-        display: "flex",
-        flexDirection: "column",
-        gap: "16px",
-        borderRight: "1px solid #D5D5D5",
-        height: "100vh",
-        position: "fixed",
-      }}
+    <Box
+      sx={{ display: "flex"}}
     >
-      {sidebarItems.map((item, index) => {
-        return <SidebarItem key={index} sidebarItem={item} />;
-      })}
-    </List>
+      <List
+        style={{
+          backgroundColor: "white",
+          width: "272px",
+          padding: "76px 18px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "16px ",
+          borderRight: "1px solid #D5D5D5",
+        }}
+      >
+        {sidebarItems.map((item, index) => {
+          return <SidebarItem key={index} sidebarItem={item} />;
+        })}
+      </List>
+      <MainContent />
+    </Box>
   );
 };
 
