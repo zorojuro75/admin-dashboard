@@ -1,12 +1,11 @@
-import { Container } from "@mui/material";
 import React from "react";
 import Stats from "./Stats";
 
-type Props = {};
+interface Props {}
 
-const MainContent = (props: Props) => {
+const MainContent: React.FC<Props> = () => {
   return (
-    <div style={{ margin: "0", padding: "96px" }}>
+    <div style={{ margin: "0 50px", padding: "96px 0px" }}>
       <Stats />
     </div>
   );
