@@ -14,7 +14,7 @@ interface Props {
 const Notification: React.FC<Props> = ({ notification }) => {
   const [showMore, setShowMore] = React.useState(false);
   return (
-    <>
+    <div style={{ padding: "20px 40px" }}>
       <div
         style={{
           display: "flex",
@@ -63,7 +63,7 @@ const Notification: React.FC<Props> = ({ notification }) => {
             </ListItem>
           ))}
       </List>
-    </>
+    </div>
   );
 };
 

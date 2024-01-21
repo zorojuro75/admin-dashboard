@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import React from "react";
 import Notification from "./Notification";
+import Barchart from "./Barchart";
 
 interface Props {};
 
@@ -52,7 +53,8 @@ const Notifications:React.FC<Props> = () => {
   return (
     <Container
       sx={{
-        padding: "40px",
+        margin: "0px",
+        padding: "0px",
         bgcolor: "white",
         boxShadow: "5px 5px 10px rgba(0,0,0,0.1)",
         borderRadius: "10px",
@@ -61,6 +63,7 @@ const Notifications:React.FC<Props> = () => {
       {notifications.map((notification, index) => (
         <Notification notification={notification} key={index} />
       ))}
+      <Barchart />
     </Container>
   );
 };
