@@ -58,7 +58,7 @@ const Notification: React.FC<Props> = ({ notification }) => {
                 gap: "16px",
               }}
             >
-              <Avatar variant="square"></Avatar>
+              <Avatar src="/avatar/Avatar3.png" variant="square"></Avatar>
               <ListItemText primary={event.name} secondary={event.date} />
             </ListItem>
           ))}

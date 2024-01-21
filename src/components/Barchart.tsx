@@ -1,6 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
 import { BarChart } from "@mui/x-charts";
-
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 export default function Barchart() {
   return (
     <Container
@@ -8,6 +8,8 @@ export default function Barchart() {
         width: "100%",
         backgroundColor: "white",
         boxShadow: "5px 5px 10px rgba(0,0,0,0.01)",
+        margin: "10px 0",
+        borderRadius: "10px",
       }}
     >
       <div
@@ -17,19 +19,40 @@ export default function Barchart() {
           justifyContent: "space-between",
         }}
       >
-        <Typography
-          component={"div"}
-          variant="h1"
-          sx={{
-            padding: "20px 40px",
-            margin: "0px 0px 24px 0px",
-            color: "#23262F",
-            fontSize: "20px",
-            fontWeight: "bold",
+        <div>
+          <Typography
+            variant="h1"
+            sx={{
+              padding: "20px 40px",
+              color: "#23262F",
+              fontSize: "20px",
+              fontWeight: "bold",
+            }}
+          >
+            My Company
+          </Typography>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          My Company
-        </Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              padding: "20px 0px",
+              color: "#23262F",
+              fontSize: "12px",
+              fontWeight: "400",
+            }}
+          >
+            Today
+          </Typography>
+          <ArrowDropDownIcon
+            style={{ color: "#787486", height: "24px", width: "24px" }}
+          />
+        </div>
       </div>
       <BarChart
         xAxis={[

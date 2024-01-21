@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = () => {
             style={{ color: "#787486", height: "24px", width: "24px" }}
           />
           <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-            <Avatar style={{ height: "32px", width: "32px" }}></Avatar>
+            <Avatar src="/avatar/Avatar.png" sx={{ height: "32px", width: "32px" }}></Avatar>
             <Hidden smDown>
               <Typography
                 component={"div"}

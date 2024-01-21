@@ -64,7 +64,7 @@ const Requests: React.FC<Props> = () => {
                 borderTop: { xs: "1px solid #D5D5D5", md: "none" },
               }}
             >
-              <Avatar></Avatar>
+              <Avatar src="/avatar/Avatar2.png"></Avatar>
               <div>
                 <Typography
                   component={"div"}
