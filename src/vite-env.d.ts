@@ -13,5 +13,15 @@ type CompanyRequest = {
   id: number;
   companyName: string;
   clientName: string;
-  status : string;
+  status: string;
+};
+type Events = {
+  id: number;
+  name: string;
+  date: string;
+};
+type Notice = {
+  id: number;
+  type: string;
+  event: Events[];
 };

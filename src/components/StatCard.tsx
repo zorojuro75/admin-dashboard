@@ -12,12 +12,12 @@ interface StatCardProps {
 }
 const StatCard: React.FC<StatCardProps> = ({ title, value, color }) => {
   return (
-    <Grid item xs={12} sm={6} md={3}>
+    <Grid item xs={12} md={6} lg={3}>
       <Card
         sx={{
           padding: "21px 16px",
           boxShadow: "5px 5px 10px rgba(0,0,0,0.1)",
-          width: "260px",
+          minWidth: { xs: "60%", sm: "80%", lg: "300px" },
           display: "flex",
           gap: "20px",
         }}

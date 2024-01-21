@@ -29,9 +29,7 @@ const Requests: React.FC<Props> = () => {
   return (
     <Container
       sx={{
-        width: { xs: "100%", md: "85%" },
         padding: "40px",
-        margin: "40px 0px",
         bgcolor: "white",
         boxShadow: "5px 5px 10px rgba(0,0,0,0.1)",
         borderRadius: "10px",
@@ -97,7 +95,7 @@ const Requests: React.FC<Props> = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              ({request.status})
+              <Typography>({request.status})</Typography>
             </Grid>
             <Grid
               item
@@ -107,7 +105,7 @@ const Requests: React.FC<Props> = () => {
               sx={{
                 display: "flex",
                 justifyContent: { xs: "start", sm: "end" },
-                gap: "30px",
+                gap: "20px",
                 paddingBottom: { xs: "20px", md: "0px" },
               }}
             >
