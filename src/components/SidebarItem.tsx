@@ -1,5 +1,4 @@
 import { ListItem, ListItemText, Typography } from "@mui/material";
-import homeIcon from '../assets/home.png';
 import React from "react";
 
 interface Props {
@@ -24,7 +23,7 @@ const SidebarItem: React.FC<Props> = ({sidebarItem}) => {
       {sidebarItem.items.map((item, index) => {
         return (
           <ListItem key={index} style={{ padding: "0px", display: "flex", gap: "16px" }}>
-            <img src={homeIcon} style={{ height: "24px", width: "24px" }} />
+            <img src={item.icon} style={{ height: "24px", width: "24px" }} />
             <ListItemText primary={item.name} style={{ color: "#878787" }} />
           </ListItem>
         );

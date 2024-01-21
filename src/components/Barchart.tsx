@@ -1,14 +1,41 @@
-import { Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import { BarChart } from "@mui/x-charts";
 
 export default function Barchart() {
   return (
-    <div style={{ width: "100%" }}>
+    <Container
+      style={{
+        width: "100%",
+        backgroundColor: "white",
+        boxShadow: "5px 5px 10px rgba(0,0,0,0.01)",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <Typography
+          component={"div"}
+          variant="h1"
+          sx={{
+            padding: "20px 40px",
+            margin: "0px 0px 24px 0px",
+            color: "#23262F",
+            fontSize: "20px",
+            fontWeight: "bold",
+          }}
+        >
+          My Company
+        </Typography>
+      </div>
       <BarChart
         xAxis={[
           {
             id: "barCategories",
-            data: ["Employee Attendance"],
+            data: [""],
             scaleType: "band",
           },
         ]}
@@ -16,9 +43,7 @@ export default function Barchart() {
         colors={["#FABE7A", "#F6866A", "#59E6F6", "#7661E2"]}
         height={300}
       />
-      <Grid container
-      sx={{ padding: "0px 0px 20px 40px"}}
-      >
+      <Grid container sx={{ padding: "0px 0px 20px 40px" }}>
         <Grid
           item
           xs={12}
@@ -86,6 +111,6 @@ export default function Barchart() {
           <Typography>Leave</Typography>
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }

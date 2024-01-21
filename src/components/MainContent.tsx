@@ -4,6 +4,7 @@ import Requests from "./Requests";
 import Assign from "./Assign";
 import { Grid } from "@mui/material";
 import Notifications from "./Notifications";
+import Barchart from "./Barchart";
 
 interface Props {}
 
@@ -18,6 +19,7 @@ const MainContent: React.FC<Props> = () => {
         </Grid>
         <Grid item xs={12} md={4}>
           <Notifications />
+          <Barchart />
         </Grid>
       </Grid>
     </div>

@@ -31,7 +31,7 @@ const Requests: React.FC<Props> = () => {
       sx={{
         padding: "40px",
         bgcolor: "white",
-        boxShadow: "5px 5px 10px rgba(0,0,0,0.1)",
+        boxShadow: "5px 5px 10px rgba(0,0,0,0.01)",
         borderRadius: "10px",
       }}
     >
@@ -121,12 +121,12 @@ const Requests: React.FC<Props> = () => {
                 }}
               />
               <img
-                src={Delete}
+                src={Edit}
                 alt=""
                 style={{ width: "40px", height: "40px" }}
               />
               <img
-                src={Edit}
+                src={Delete}
                 alt=""
                 style={{ width: "40px", height: "40px" }}
               />

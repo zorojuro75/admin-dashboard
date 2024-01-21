@@ -45,7 +45,7 @@ const Assign: React.FC<Props> = () => {
       sx={{
         padding: "40px",
         bgcolor: "white",
-        boxShadow: "5px 5px 10px rgba(0,0,0,0.1)",
+        boxShadow: "5px 5px 10px rgba(0,0,0,0.01)",
         borderRadius: "10px",
       }}
     >
@@ -83,6 +83,7 @@ const Assign: React.FC<Props> = () => {
             color: "#23262F",
             fontSize: "16px",
             fontWeight: "bold",
+            bgcolor: "rgba(247, 247, 248, 1)"
           }}
         >
           {options.map((option) => (
@@ -199,7 +200,7 @@ const Assign: React.FC<Props> = () => {
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#6956E5",
+                  backgroundColor: "#6956e5",
                   color: "white",
                   padding: "8px 32px",
                   border: "none",
