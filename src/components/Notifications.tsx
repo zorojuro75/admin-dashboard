@@ -13,17 +13,17 @@ const Notifications:React.FC<Props> = () => {
         {
           id: 1,
           name: "James Mullican",
-          date: "12/12/2021",
+          date: "04 April, 2021 | 04:00 PM",
         },
         {
           id: 2,
           name: "James Mullican",
-          date: "12/12/2021",
+          date: "04 April, 2021 | 04:00 PM",
         },
         {
           id: 3,
           name: "James Mullican",
-          date: "12/12/2021",
+          date: "04 April, 2021 | 04:00 PM",
         },
       ],
     },
@@ -34,17 +34,17 @@ const Notifications:React.FC<Props> = () => {
         {
           id: 1,
           name: "James Mullican",
-          date: "12/12/2021",
+          date: "04 April, 2021 ",
         },
         {
           id: 2,
           name: "James Mullican",
-          date: "12/12/2021",
+          date: "04 April, 2021 ",
         },
         {
           id: 3,
           name: "James Mullican",
-          date: "12/12/2021",
+          date: "04 April, 2021 ",
         },
       ],
     },

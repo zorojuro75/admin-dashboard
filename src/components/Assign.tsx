@@ -157,7 +157,7 @@ const Assign: React.FC<Props> = () => {
                 paddingTop: { sx: "20px", md: "0px" },
               }}
             >
-              <Avatar></Avatar>
+              <Avatar src="/avatar/Avatar2.png"></Avatar>
               <div>
                 <Typography
                   component={"div"}
