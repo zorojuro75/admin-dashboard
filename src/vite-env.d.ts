@@ -9,3 +9,9 @@ type SidebarItem = {
   name: string;
   items: Item[];
 };
+type CompanyRequest = {
+  id: number;
+  companyName: string;
+  clientName: string;
+  status : string;
+};

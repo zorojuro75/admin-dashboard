@@ -6,25 +6,31 @@ import Edit from "../assets/edit.png";
 interface Props {}
 
 const Requests: React.FC<Props> = () => {
-  let requests = [
+  let requests: CompanyRequest[] = [
     {
-      clinetName: "James Mullican",
+      id: 1,
+      clientName: "James Mullican",
       companyName: "ABC Co. Ltd",
+      status: "Waiting for approval",
     },
     {
-      clinetName: "James Mullican",
+      id: 2,
+      clientName: "James Mullican",
       companyName: "ABC Co. Ltd",
+      status: "Waiting for approval",
     },
     {
-      clinetName: "James Mullican",
+      id: 3,
+      clientName: "James Mullican",
       companyName: "ABC Co. Ltd",
+      status: "Waiting for approval",
     },
   ];
   return (
     <Container
       sx={{
-        width: "1000px",
-        padding: "10px",
+        width: { xs: "100%", md: "85%" },
+        padding: "40px",
         margin: "40px 0px",
         bgcolor: "white",
         boxShadow: "5px 5px 10px rgba(0,0,0,0.1)",
@@ -37,7 +43,7 @@ const Requests: React.FC<Props> = () => {
         noWrap
         sx={{
           padding: "10px",
-          margin: "24px 0px",
+          margin: "0px 0px 24px 0px",
           color: "#23262F",
           fontSize: "20px",
           fontWeight: "bold",
@@ -53,7 +59,12 @@ const Requests: React.FC<Props> = () => {
               xs={12}
               sm={6}
               md={4}
-              sx={{ display: "flex", gap: "20px" }}
+              sx={{
+                display: "flex",
+                gap: "20px",
+                paddingTop: { sx: "20px", md: "0px" },
+                borderTop: { xs: "1px solid #D5D5D5", md: "none" },
+              }}
             >
               <Avatar></Avatar>
               <div>
@@ -68,7 +79,7 @@ const Requests: React.FC<Props> = () => {
                     margin: "0px",
                   }}
                 >
-                  {request.clinetName}
+                  {request.clientName}
                 </Typography>
                 <Typography
                   component={"div"}
@@ -86,14 +97,19 @@ const Requests: React.FC<Props> = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              (Waiting for approval)
+              ({request.status})
             </Grid>
             <Grid
               item
               xs={12}
               sm={6}
               md={4}
-              sx={{ display: "flex", justifyContent: "end", gap: "30px" }}
+              sx={{
+                display: "flex",
+                justifyContent: { xs: "start", sm: "end" },
+                gap: "30px",
+                paddingBottom: { xs: "20px", md: "0px" },
+              }}
             >
               <img
                 src={Approve}

@@ -1,11 +1,12 @@
 import { ListItem, ListItemText, Typography } from "@mui/material";
 import homeIcon from '../assets/home.png';
+import React from "react";
 
-type Props = {
+interface Props {
   sidebarItem: SidebarItem;
 };
 
-const SidebarItem = (props: Props) => {
+const SidebarItem: React.FC<Props> = ({sidebarItem}) => {
   return (
     <>
       <Typography
@@ -18,9 +19,9 @@ const SidebarItem = (props: Props) => {
           fontSize: "20px",
         }}
       >
-        {props.sidebarItem.name}
+        {sidebarItem.name}
       </Typography>
-      {props.sidebarItem.items.map((item, index) => {
+      {sidebarItem.items.map((item, index) => {
         return (
           <ListItem key={index} style={{ padding: "0px", display: "flex", gap: "16px" }}>
             <img src={homeIcon} style={{ height: "24px", width: "24px" }} />
