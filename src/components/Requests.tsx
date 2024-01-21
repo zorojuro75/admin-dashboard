@@ -118,17 +118,18 @@ const Requests: React.FC<Props> = () => {
                   padding: "8px",
                   borderRadius: "100%",
                   backgroundColor: "rgba(58, 151, 76, .1)",
+                  cursor: "pointer",
                 }}
               />
               <img
                 src={Edit}
                 alt=""
-                style={{ width: "40px", height: "40px" }}
+                style={{ width: "40px", height: "40px", cursor: "pointer" }}
               />
               <img
                 src={Delete}
                 alt=""
-                style={{ width: "40px", height: "40px" }}
+                style={{ width: "40px", height: "40px", cursor: "pointer" }}
               />
             </Grid>
           </React.Fragment>

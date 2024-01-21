@@ -22,7 +22,7 @@ const SidebarItem: React.FC<Props> = ({sidebarItem}) => {
       </Typography>
       {sidebarItem.items.map((item, index) => {
         return (
-          <ListItem key={index} style={{ padding: "0px", display: "flex", gap: "16px" }}>
+          <ListItem key={index} sx={{ padding: "0px", display: "flex", gap: "16px", cursor: "pointer" }}>
             <img src={item.icon} style={{ height: "24px", width: "24px" }} />
             <ListItemText primary={item.name} style={{ color: "#878787" }} />
           </ListItem>
